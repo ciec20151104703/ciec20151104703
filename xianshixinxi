@@ -1,0 +1,18 @@
+#include "stdafx.h"
+#include "string.h"
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	char *ptr1="tfgeauiotyge4hioerat   gyhre8tgioqy8   ieprtguirewyhtguiaytgkrhgauiewghuirah78waeyfuwaehfiugt";
+	char s[11];
+	int  i=0;
+	while(!((*(ptr1+i) == 'g')&&(*(ptr1+i+1)=='y')&&(*(ptr1+i+2)=='h')))
+	{
+		i++;
+	}
+	strncpy(s,ptr1+i+6,11);
+	s[1]='\0';
+	printf("%s \n",s);
+	return 0;
+}
+
